@@ -1,0 +1,76 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+body {
+  background-color: #185a86;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+}
+#app {
+  width: fit-content;
+  margin: 20% auto;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options * {
+  margin: 0;
+  padding: 0;
+}
+.options {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 120%;
+  background-color: #38383833;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.options th {
+  font-size: 150%;
+}
+.options__list {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 15px;
+}
+.options__list * {
+  max-width: 80px;
+  padding: 2px;
+  border: 1px solid white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.options__select,
+.option__value-input {
+  width: 100%;
+  min-height: 25px;
+  border-radius: 5px;
+}
+.option__edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.option__button-save {
+  margin-top: 20px;
+  width: 90%;
+  min-height: 40px;
+  background-color: #0c65a0;
+  border-color: white;
+  color: white;
+  border-radius: 5px;
+}
+.option__button-save:hover {
+  background-color: #108fe4;
+  cursor: pointer;
+}
