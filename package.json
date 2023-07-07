@@ -2,6 +2,8 @@
   "name": "vue-project",
   "version": "0.0.0",
   "private": true,
+  
+  "homepage": "https://L-Monde.github.io/optimalcity/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -9,8 +11,7 @@
     "test:unit": "vitest",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "popper.js": "^1.16.1",
