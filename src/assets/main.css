@@ -20,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .options {
   margin: 0 auto;
   padding: 2rem;
@@ -73,4 +74,18 @@ body {
 .option__button-save:hover {
   background-color: #108fe4;
   cursor: pointer;
+}
+@media only screen and (max-width: 520px) {
+  #app {
+    padding: 0 1rem;
+
+    gap: 30px;
+    font-size: 80%;
+  }
+  .options {
+    padding: 0.5rem;
+    width: 90%;
+    gap: 20px;
+    border-radius: 15px;
+  }
 }
